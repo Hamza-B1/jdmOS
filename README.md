@@ -1,12 +1,13 @@
-Build an image for our build-environment:
- - `docker build buildenv -t myos-buildenv`
+# jdmOS
 
-## Build
+This is a minimal OS I have "made" for my own learning experience.
+It targets the x86_64 platform. It uses a monolithic kernel (for now).
+## Features
+- Printing text via video memory
+## To-do
+- Shell
+- Keyboard Driver
+- Calculator App
+- Dynamic Memory Allocation
+- Text Editor
 
-Enter build environment:
- - Linux or MacOS: `docker run --rm -it -v "$(pwd)":/root/env myos-buildenv`
-
- `sudo service docker start`
-
- `sudo docker build env -t myos-buildenv`
- `docker run --rm -it -v "$()":/root/env myos-buildenv`
